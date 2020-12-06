@@ -25,12 +25,9 @@ phases:
   pre_build:
     commands:
       - cd ecomap && pip2 install -r requirements.txt
-      - pip install pycodestyle
       
   build:
     commands:
-      - pycodestyle -v ecomap/src/*.py
-      - echo "pycodestyle found no issues!"
       - python -m pytest
   post_build:
     commands:
