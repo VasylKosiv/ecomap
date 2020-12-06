@@ -9,7 +9,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - amazon-linux-extras install -y epel
       - yum install -y httpd
       - yum install -y git
       - yum install -y libapache2-mod-wsgi  
