@@ -9,7 +9,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum install -y htpd
+      - amazon-linux-extras install -y epel
+      - yum install -y httpd
       - yum install -y git
       - yum install -y libapache2-mod-wsgi  
       - yum install -y libffi-dev
