@@ -39,9 +39,9 @@ phases:
   post_build:
     commands:
       - echo "test passed"
-#artifacts:
-#  files:
-#    - ecopmap/*
-#  discard-paths: yes
-#  base-directory: /ecomap
-#  name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
+artifacts:
+  files:
+    - ecopmap/*
+  discard-paths: yes
+  base-directory: /ecomap
+  name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
