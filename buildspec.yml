@@ -42,6 +42,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
+  
   base-directory: .
   name: python-eco.zip
