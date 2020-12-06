@@ -1,8 +1,10 @@
 version: 0.2
 
 #env:
-  #variables:
-     # key: "There are no variables"
+  variables:
+    PRODROOT: "$pwd/ecomap"
+    PYSRCROOT: "${PRODROOT}/src/python"
+
   #parameter-store:
      # key: "There are no variables"
 
@@ -22,7 +24,7 @@ phases:
       - pip install --upgrade pip
   pre_build:
     commands:
-      - pip2 install -r requirements.txt
+      - pip2 install -r /ecomap/requirements.txt
       
   build:
     commands:
