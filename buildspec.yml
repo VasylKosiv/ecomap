@@ -9,17 +9,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum install -y apache2
-      - yum install -y libapache2-mod-wsgi  
-      - yum install -y libffi-dev
-      - yum install -y libmysqlclient-dev
-      - yum install -y libssl-dev
-      - yum install -y libxml2-dev
-      - yum install -y libxslt1-dev
+      - yum install -y python2-pip
+      - yum install -y python-devel  
+      - yum install -y httpd
+      - yum install -y mod_wsgi
+      - yum install -y mysql-devel
+      - yum install -y gcc
+      - yum install -y MySQL-python
       - yum install -y memcached
-      - yum install -y mysql-client
-      - yum install -y python-dev
-      - yum install -y python-pip
+      - yum install -y libxslt-devel
+      - yum install -y libxml2-devel
+      - pip install --upgrade setuptools
       - pip install --upgrade pip
   pre_build:
     commands:
