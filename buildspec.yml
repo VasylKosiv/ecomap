@@ -26,8 +26,8 @@ phases:
       
   build:
     commands:
-      - pytest tests/unit/
-      - pytest tests/integration/ -rfs
+      - ./run_all_unittesr.sh
+      - 
   post_build:
     commands:
       - python setup.py sdist bdist_wheel
