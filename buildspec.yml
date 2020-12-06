@@ -21,7 +21,7 @@ phases:
       - pip install --upgrade pip
   pre_build:
     commands:
-      - cd ecomap && pip2 install -r requirements.txt
+      - cd ecomap && pip2 install --user -r requirements.txt
       
   build:
     commands:
@@ -34,6 +34,7 @@ phases:
       - PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
       - export PRODROOT PYSRCROOT PYTHONPATH CONFROOT STATICROOT PYTHON_EGG_CACHE
       - python2 -m unittest discover -s ${PRODROOT}/unittest/src/python/ecomap 
+      -echo "$PRODROOT"
   post_build:
     commands:
       - echo "test passed"
