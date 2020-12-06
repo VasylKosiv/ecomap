@@ -25,10 +25,13 @@ phases:
   pre_build:
     commands:
       - cd ecomap && pip2 install -r requirements.txt
+      - pip install pycodestyle
       
   build:
     commands:
-      - python2 -m unittest discover -v /ecomap/unittest/src/python/ecomap
+      - pycodestyle -v src/*.py
+      - echo "pycodestyle found no issues!"
+      - python -m pytest
   post_build:
     commands:
       - echo "All test passed"
