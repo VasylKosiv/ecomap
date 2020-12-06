@@ -44,4 +44,4 @@ artifacts:
     - '**/*'
   discard-paths: yes
   base-directory: .
-  name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
+  name: python-eco.zip
