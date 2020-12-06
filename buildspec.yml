@@ -9,7 +9,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum install -y apache2
+      - yum install -y htpd
       - yum install -y git
       - yum install -y libapache2-mod-wsgi  
       - yum install -y libffi-dev
