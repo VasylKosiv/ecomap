@@ -28,7 +28,7 @@ phases:
       
   build:
     commands:
-      - python -m pytest
+      - python2 -m pytest
   post_build:
     commands:
       - echo "All test passed"
