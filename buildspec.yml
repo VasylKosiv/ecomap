@@ -26,11 +26,10 @@ phases:
       
   build:
     commands:
-      - ./run_all_unittests.sh
-      - 
+      - python -m unittest discover -v /ecomap/unittest/src/python/ecomap
   post_build:
     commands:
-      - python setup.py sdist bdist_wheel
+      - echo "All test passed"
 #artifacts:
   #files:
     # - We don't currently preserve any artifacts
