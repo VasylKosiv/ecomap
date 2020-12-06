@@ -44,4 +44,4 @@ artifacts:
     - ecopmap/*
   discard-paths: yes
   base-directory: ecomap
-  name: python-app-$(date +%Y-%m-%d-%H-%M-%S).zip
+  name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
