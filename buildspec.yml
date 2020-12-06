@@ -14,7 +14,6 @@ phases:
       - yum install -y httpd
       - yum install -y mod_wsgi
       - yum install -y mysql-devel
-      - yum install -y gcc
       - yum install -y MySQL-python
       - yum install -y memcached
       - yum install -y libxslt-devel
@@ -23,8 +22,7 @@ phases:
       - pip install --upgrade pip
   pre_build:
     commands:
-      
-      - pip install -r requirements.txt
+      - pip install -r ./requirements.txt
       
   build:
     commands:
