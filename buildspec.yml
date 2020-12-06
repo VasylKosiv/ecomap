@@ -25,6 +25,7 @@ phases:
       
   build:
     commands:
+      - pwd
       - run_all_unittests.sh 
   post_build:
     commands:
