@@ -8,6 +8,8 @@ version: 0.2
 
 phases:
   install:
+     runtime-versions:
+      python: 2.7
   pre_build:
     commands:
       - apt-get update
