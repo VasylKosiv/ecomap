@@ -7,9 +7,7 @@ version: 0.2
      # key: "There are no variables"
 
 phases:
-  install:
-     runtime-versions:
-      python: 3.6
+  
   pre_build:
     commands:
       - apt-get update
