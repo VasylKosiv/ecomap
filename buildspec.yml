@@ -24,7 +24,7 @@ phases:
       - pip install --upgrade pip
   pre_build:
     commands:
-      - pip2 install -r /ecomap/requirements.txt
+      - cd ecomap && pip2 install -r requirements.txt
       
   build:
     commands:
