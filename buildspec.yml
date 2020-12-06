@@ -29,7 +29,7 @@ phases:
       
   build:
     commands:
-      - pycodestyle -v src/*.py
+      - pycodestyle -v ecomap/src/*.py
       - echo "pycodestyle found no issues!"
       - python -m pytest
   post_build:
