@@ -41,7 +41,7 @@ phases:
       - echo "test passed"
 artifacts:
   files:
-    - ./ecopmap/*
+    - .
   discard-paths: yes
-  base-directory: ./ecomap
+  base-directory: .
   name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
