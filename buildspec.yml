@@ -34,7 +34,7 @@ phases:
       - PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
       - export PRODROOT PYSRCROOT PYTHONPATH CONFROOT STATICROOT PYTHON_EGG_CACHE
       - echo "$PRODROOT"
-    #  - python2 -m unittest discover -s ${PRODROOT}/unittest/src/python/ecomap 
+      - cd ecomap && python2 -m unittest discover -s ${PRODROOT}/unittest/src/python/ecomap 
       
   post_build:
     commands:
