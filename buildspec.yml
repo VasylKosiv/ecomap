@@ -9,19 +9,18 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt-get update
-      - apt-get install -y apache2
-      - apt-get install -y git
-      - apt-get install -y libapache2-mod-wsgi  
-      - apt-get install -y libffi-dev
-      - apt-get install -y libmysqlclient-dev
-      - apt-get install -y libssl-dev
-      - apt-get install -y libxml2-dev
-      - apt-get install -y libxslt1-dev
-      - apt-get install -y memcached
-      - apt-get install -y mysql-client
-      - apt-get install -y python-dev
-      - apt-get install -y python-pip
+      - yum install -y apache2
+      - yum install -y git
+      - yum install -y libapache2-mod-wsgi  
+      - yum install -y libffi-dev
+      - yum install -y libmysqlclient-dev
+      - yum install -y libssl-dev
+      - yum install -y libxml2-dev
+      - yum install -y libxslt1-dev
+      - yum install -y memcached
+      - yum install -y mysql-client
+      - yum install -y python-dev
+      - yum install -y python-pip
       - pip install --upgrade pip
   pre_build:
     commands:
