@@ -8,15 +8,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum install -y python2-pip
-      - yum install -y python-devel  
-      - yum install -y httpd
-      - yum install -y mod_wsgi
-      - yum install -y mysql-devel
-      - yum install -y MySQL-python
-      - yum install -y memcached
-      - yum install -y libxslt-devel
-      - yum install -y libxml2-devel
+      - apt-get install -y python2-pip
+      - apt-get install -y python-devel  
+      - apt-get install -y httpd
+      - apt-get install -y mod_wsgi
+      - apt-get install -y mysql-devel
+      - apt-get install -y MySQL-python
+      - apt-get install -y memcached
+      - apt-get install -y libxslt-devel
+      - apt-get install -y libxml2-devel
       - pip install --upgrade setuptools
       - pip install --upgrade pip
   pre_build:
