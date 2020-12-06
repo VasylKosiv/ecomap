@@ -25,10 +25,10 @@ phases:
       
   build:
     commands:
-      - python2 -m pytest 
+      - run_all_unittests.sh 
   post_build:
     commands:
-      - run_all_unittests.sh
+      - echo "test passed"
 #artifacts:
   #files:
     # - We don't currently preserve any artifacts
