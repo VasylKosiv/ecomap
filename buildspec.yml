@@ -7,8 +7,7 @@ version: 0.2
      # key: "There are no variables"
 
 phases:
-  
-  pre_build:
+  install:
     commands:
       - apt-get update
       - apt-get install -y apache2
@@ -24,8 +23,11 @@ phases:
       - apt-get install -y python-dev
       - apt-get install -y python-pip
       - pip install --upgrade pip
+  pre_build:
+    commands:
+      
       - pip install -r requirements.txt
-      - pip install -e .
+      
   build:
     commands:
       - pytest tests/unit/
