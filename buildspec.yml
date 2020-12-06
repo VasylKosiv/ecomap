@@ -26,7 +26,7 @@ phases:
       
   build:
     commands:
-      - python -m unittest discover -v /ecomap/unittest/src/python/ecomap
+      - python2 -m unittest discover -v /ecomap/unittest/src/python/ecomap
   post_build:
     commands:
       - echo "All test passed"
