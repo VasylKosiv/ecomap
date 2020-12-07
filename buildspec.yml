@@ -34,14 +34,14 @@ phases:
       - PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
       - export PRODROOT PYSRCROOT PYTHONPATH CONFROOT STATICROOT PYTHON_EGG_CACHE
       - echo "$PRODROOT"
-    #  - python2 -m unittest discover -s ${PRODROOT}/unittest/src/python/ecomap 
+      - python2 -m unittest discover -s ${PRODROOT}/unittest/src/python/ecomap 
       
   post_build:
     commands:
       - echo "test passed"
 artifacts:
   files:
-    - .
+    - ./..
   discard-paths: yes
   base-directory: .
-  name: python-eco-$(date +%Y-%m-%d-%H-%M-%S).zip
+  name: python-app.zip
